@@ -1,5 +1,5 @@
 "use client"
-import Head from "next/head"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -126,59 +126,6 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.header>
-
-      <Head>
-        {/* ... existing meta tags ... */}
-        <title>Waverly Partners | Executive Search Excellence</title>
-        <meta name="title" content="Waverly Partners | Executive Search Excellence" />
-        <meta
-            name="description"
-            content="Waverly Partners is a retained executive search firm helping clients hire transformative leaders across nonprofit, chamber, and corporate sectors."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://waverly-partners.com/" />
-        <link rel="icon" href="/favicon.ico" />
-        
-        {/* ✅ SEO JSON-LD Schema for Organization */}
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: "Waverly Partners",
-                alternateName: "Waverly Partners, a Ward Howell Company",
-                url: "https://waverly-partners.com/",
-                logo: "https://waverly-partners.com/Waverly_partners_logo.png",
-                foundingDate: "2001",
-                sameAs: ["https://www.linkedin.com/company/waverly-partners"],
-                contactPoint: [
-                {
-                    "@type": "ContactPoint",
-                    telephone: "+1-440-355-6629",
-                    contactType: "Customer Support",
-                    areaServed: "US",
-                    availableLanguage: "English",
-                },
-                {
-                    "@type": "ContactPoint",
-                    telephone: "+1-440-892-5961",
-                    contactType: "Customer Support",
-                    areaServed: "US",
-                    availableLanguage: "English",
-                },
-                ],
-                address: {
-                "@type": "PostalAddress",
-                addressLocality: "Cleveland",
-                addressRegion: "OH",
-                postalCode: "44116",
-                addressCountry: "USA",
-                },
-            }),
-            }}
-        />
-      </Head>
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -358,6 +305,7 @@ export default function Home() {
                   title: "Same Contact Information",
                   description: "The same phone numbers and personal relationships you've come to rely on.",
                 },
+                
                 {
                   icon: <CheckCircle className="h-6 w-6 text-navy" />,
                   title: "Same Service Commitment",
