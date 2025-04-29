@@ -59,7 +59,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="public/waverly-ward-howell-logo.png"
+                src="/waverly-ward-howell-logo.png"
                 alt="Waverly Partners | Ward Howell International"
                 fill
                 className="object-contain"
