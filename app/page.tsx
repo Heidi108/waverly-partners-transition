@@ -254,7 +254,7 @@ export default function Home() {
                       fontFamily: "Cinzel, serif",
                       fontSize: "1.75rem",
                       fontWeight: 700,
-                      letterSpacing: "0.05em",
+                      letterSpacing: "0.01em", // tighter spacing
                       textTransform: "uppercase"
                     }}
                   >
