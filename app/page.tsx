@@ -126,6 +126,7 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.header>
+
       <Head>
         {/* ... existing meta tags ... */}
         <title>Waverly Partners | Executive Search Excellence</title>
