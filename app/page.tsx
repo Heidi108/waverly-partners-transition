@@ -249,9 +249,35 @@ export default function Home() {
                 <p className="leading-relaxed font-medium text-center text-xl text-navy">
                   As of early 2025, we are now:
                   <br />
-                  <span className="text-2xl font-bold uppercase">WAVERLY PARTNERS</span>
-                  <span className="text-lg"> | </span>
-                  <span className="text-lg">a  <strong className="font-bold">Ward Howell</strong> company</span>
+                  <span
+                  style={{
+                    fontFamily: "Cinzel, serif",
+                    fontSize: "1.75rem",
+                    fontWeight: "700",
+                    letterSpacing: "0.05em",
+                    textTransform: "uppercase"
+                  }}
+                >
+                  Waverly Partners
+                </span>
+                <span
+                  style={{
+                    fontFamily: "Merriweather, serif",
+                    fontSize: "1.25rem",
+                    margin: "0 0.5rem"
+                  }}
+                >
+                  |
+                </span>
+                <span
+                  style={{
+                    fontFamily: "Merriweather, serif",
+                    fontSize: "1.125rem"
+                  }}
+                >
+                  a <strong style={{ color: "#002f6c", fontWeight: 700 }}>Ward Howell</strong> company
+                </span>
+
 
                 </p>
                 <p className="leading-relaxed text-justify">
