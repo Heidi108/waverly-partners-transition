@@ -136,7 +136,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://waverly-partners.com/" />
-        <link rel="icon" href="/favicon_WaverlyPartners.png" />
+        <link rel="icon" href="/favicon_WaverlyPartners.png" type="image/png" sizes="32x32" />
       
         {/* ✅ SEO JSON-LD Schema for Organization */}
         <script
