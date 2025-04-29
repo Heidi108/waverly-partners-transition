@@ -52,26 +52,19 @@ export default function Home() {
       >
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3">
-              <div className="relative h-10 w-[150px] md:h-12 md:w-[200px]">
-                <Image
-                  src="/Waverly_partners_logo.png"
-                  alt="Waverly Partners"
-                  fill
-                  className="object-contain brightness-0 invert"
-                  priority
-                />
-              </div>
-              <span className="text-white font-medium">+</span>
-              <div className="relative h-10 w-[150px] md:h-12 md:w-[200px]">
-                <Image
-                  src="/logo_ward_howell_grau.png"
-                  alt="Ward Howell International"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
+            <div
+              className="relative h-10 w-[220px] md:h-12 md:w-[280px] cursor-pointer"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }}
+            >
+              <Image
+                src="/waverly-ward-howell-logo.png"
+                alt="Waverly Partners | Ward Howell International"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -136,7 +129,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-blue-50 to-gray-50 overflow-hidden">
+        <section className="relative w-full py-8 md:py-16 lg:py-24 xl:py-32 bg-gradient-to-r from-blue-50 to-gray-50 overflow-hidden">
           <motion.div
             className="absolute inset-0 z-0 opacity-10"
             initial={{ opacity: 0 }}
@@ -156,31 +149,37 @@ export default function Home() {
           <div className="container px-4 md:px-6 relative z-10">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <motion.div
-                className="flex flex-col justify-center space-y-4"
+                className="flex flex-col justify-center space-y-4 text-center"
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <div className="space-y-2">
                   <motion.h1
-                    className="text-2xl font-heading font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-navy"
+                    className="text-2xl font-heading font-medium tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-navy"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                   >
-                    Waverly Partners Has Joined Ward Howell International
+                    Waverly Partners
+                    <br />
+                    Has Joined
+                    <br />
+                    Ward Howell International
                   </motion.h1>
                   <motion.p
-                    className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-2xl/relaxed"
+                    className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-2xl/relaxed mx-auto"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                   >
-                    Same team. Same commitment. Now with a global reach.
+                    Same team. Same commitment.
+                    <br />
+                    Now with a global reach.
                   </motion.p>
                 </div>
                 <motion.div
-                  className="flex flex-col gap-2 min-[400px]:flex-row"
+                  className="flex flex-col gap-2 min-[400px]:flex-row justify-center"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
@@ -241,42 +240,37 @@ export default function Home() {
                 A Message From Our Team
               </h2>
               <div className="space-y-4 text-gray-600">
-                <p className="leading-relaxed">
-                  Waverly Partners, founded in 2001 and recognized for leading retained executive searches across the
-                  nonprofit sector, chambers of commerce, and Fortune 500s, has officially joined Ward Howell
-                  International—one of the world's oldest and most respected global leadership consulting firms, founded
-                  in 1951 with 30+ offices in 22 countries.
+                <p className="leading-relaxed text-justify">
+                  Waverly Partners, founded in 2001, and recognized for leading retained executive searches across the
+                  nonprofit sector and Fortune 500s, has officially joined Ward Howell International, one of the world's
+                  oldest and most respected global leadership consulting firms. Ward Howell International was founded in 1951 and today has
+                  30+ offices in 22 countries.
                 </p>
                 <p className="leading-relaxed font-medium text-center text-xl text-navy">
                   As of early 2025, we are now:
                   <br />
-                  <span className="text-2xl font-bold">Waverly Partners, a Ward Howell Company</span>
+                  <span className="text-2xl font-bold uppercase">WAVERLY PARTNERS</span>
+                  <span className="text-lg"> | </span>
+                  <span className="text-lg">a  <strong className="font-bold">Ward Howell</strong> company</span>
+
                 </p>
-                <p className="leading-relaxed">
-                  This strategic merger enhances our ability to serve our clients, with expanded access to global talent
-                  and leadership consulting services—while continuing our legacy of excellence, integrity, and
-                  results-driven executive search.
+                <p className="leading-relaxed text-justify">
+                  Waverly Partners functions as Ward Howell's nonprofit search practice with clients that include
+                  chambers of commerce, economic development organizations, trade associations, cultural arts, and health
+                  and human service agencies. We are engaged by client Boards of Directors on search assignments for
+                  President, CEO and Executive Director roles. Waverly Partners is also an active member firm of the
+                  Network of Nonprofit Search Consultants, a trade association focused on best practices within the
+                  nonprofit search sector.
                 </p>
               </div>
-              <div className="pt-8 flex justify-center">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-[280px] h-[80px] md:w-[320px] md:h-[100px] relative bg-white p-4 rounded shadow-sm">
-                    <Image
-                      src="/Waverly_partners_log2.png"
-                      alt="Waverly Partners Logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="text-4xl text-gray-400 font-bold">+</div>
-                  <div className="w-[280px] h-[80px] md:w-[320px] md:h-[100px] relative bg-navy p-4 rounded shadow-sm">
-                    <Image
-                      src="/logo_ward_howell_grau.png"
-                      alt="Ward Howell International Logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+              <div className="pt-4 flex justify-center">
+                <div className="w-[320px] h-[100px] md:w-[400px] md:h-[120px] relative bg-white p-4 rounded shadow-sm">
+                  <Image
+                    src="/waverly-ward-howell-logo.png"
+                    alt="Waverly Partners | Ward Howell International Logo"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </motion.div>
@@ -302,23 +296,29 @@ export default function Home() {
               {[
                 {
                   icon: <Users className="h-6 w-6 text-navy" />,
-                  title: "Same Leadership Team",
+                  title: "Same Consulting Team",
                   description:
-                    "Heidi Milosovic and Eric Peterson continue to lead our team with the same dedication and expertise.",
+                    "The same highly qualified search consultants, each of whom has over 25 years of experience.",
                 },
                 {
                   icon: <Phone className="h-6 w-6 text-navy" />,
                   title: "Same Contact Information",
                   description: "The same phone numbers and personal relationships you've come to rely on.",
                 },
+                
                 {
                   icon: <CheckCircle className="h-6 w-6 text-navy" />,
-                  title: "Same Commitment",
+                  title: "Same Service Commitment",
                   description: "Our dedication to service, confidentiality, and results remains unwavering.",
                 },
                 {
                   icon: <Building className="h-6 w-6 text-navy" />,
-                  title: "Same Focus",
+                  title: (
+                    <>
+                      Same Sector<br />
+                      Focus
+                    </>
+                  ),
                   description: "We continue to specialize in nonprofit, chamber, and economic development clients.",
                 },
               ].map((item, index) => (
@@ -361,29 +361,31 @@ export default function Home() {
               <h2 className="text-3xl font-heading font-semibold tracking-tighter sm:text-4xl text-navy">
                 What This Means for You
               </h2>
-              <p className="text-gray-600 md:text-xl/relaxed">Enhanced capabilities to better serve your needs.</p>
+              <p className="text-gray-600 md:text-xl/relaxed">
+                Expanded capabilities to better support your goals and leadership priorities.
+              </p>
             </motion.div>
             <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
               {[
                 {
                   icon: <Globe className="h-6 w-6 text-navy flex-shrink-0 mt-0.5" />,
                   title: "Global Talent Network",
-                  description: "Access to Ward Howell's extensive network across 30+ offices in 22 countries.",
+                  description: "Access to Ward Howell’s global network of 30+ offices in 22 countries, helping organizations connect with top talent worldwide.",
                 },
                 {
                   icon: <CheckCircle className="h-6 w-6 text-navy flex-shrink-0 mt-0.5" />,
                   title: "Expanded Services",
-                  description: "Additional offerings like board advisory and management appraisals.",
+                  description: "Additional offerings such as board advisory, succession planning, and leadership appraisals to help organizations thrive.",
                 },
                 {
                   icon: <Building className="h-6 w-6 text-navy flex-shrink-0 mt-0.5" />,
                   title: "International Footprint",
-                  description: "A broader national and international presence to better serve your global needs.",
+                  description: "A broader national and international presence across regions to support your strategic and long-term organizational goals.",
                 },
                 {
                   icon: <Users className="h-6 w-6 text-navy flex-shrink-0 mt-0.5" />,
                   title: "Increased Capacity",
-                  description: "Enhanced resources and innovation to meet your evolving leadership needs.",
+                  description: "Enhanced resources, tools, and leadership solutions to meet your evolving challenges and operational needs effectively.",
                 },
               ].map((item, index) => (
                 <motion.div
@@ -426,31 +428,24 @@ export default function Home() {
               <h2 className="text-3xl font-heading font-semibold tracking-tighter sm:text-4xl text-navy">
                 Meet the Partners
               </h2>
-              <p className="text-gray-600 md:text-xl/relaxed">Our leadership team is here to serve you.</p>
+              <p className="text-gray-600 md:text-xl/relaxed">Our consulting team is here to serve you.</p>
             </motion.div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
               {[
                 {
                   name: "Heidi G. Milosovic",
-                  title: "Managing Partner – Cleveland, OH",
-                  image: "/heidi-profile.jpg",
+                  title: "Managing Partner",
+                  location: "Cleveland, OH",
+                  image: "/heidi-profile.jpeg",
                   email: "HMilosovic@Waverly-Partners.com",
                   office: "440.355.6629",
                   mobile: "216.387.0832",
                   linkedin: "https://www.linkedin.com/in/heidimilosovic/",
                 },
                 {
-                  name: "Deborah M. Galbraith",
-                  title: "Partner – Kansas City, KS",
-                  image: "/galbraith-profile.jpeg",
-                  email: "DGalbraith@Waverly-Partners.com",
-                  office: "785.856.9273",
-                  mobile: "785.764.2920",
-                  linkedin: "https://www.linkedin.com/in/deborahmgalbraith/",
-                },
-                {
                   name: "Sara B. Cikalo",
-                  title: "Partner – Cleveland, OH",
+                  title: "Partner",
+                  location: "Cleveland, OH",
                   image: "/sara-profile.jpeg",
                   email: "SCikalo@Waverly-Partners.com",
                   office: "440.933.0096",
@@ -459,12 +454,23 @@ export default function Home() {
                 },
                 {
                   name: "Eric N. Peterson",
-                  title: "Partner – Cleveland, OH",
+                  title: "Partner",
+                  location: "Cleveland, OH",
                   image: "/eric-profile.jpg",
                   email: "EPeterson@Waverly-Partners.com",
                   office: "440.892.5961",
                   mobile: "440.463.0988",
                   linkedin: "https://www.linkedin.com/in/ericnpeterson/",
+                },
+                {
+                  name: "Deborah M. Galbraith",
+                  title: "Partner",
+                  location: "Kansas City, KS",
+                  image: "/galbraith-profile.jpeg",
+                  email: "DGalbraith@Waverly-Partners.com",
+                  office: "785.856.9273",
+                  mobile: "785.764.2920",
+                  linkedin: "https://www.linkedin.com/in/deborahmgalbraith/",
                 },
               ].map((partner, index) => (
                 <motion.div
@@ -487,8 +493,15 @@ export default function Home() {
                     <Image src={partner.image || "/placeholder.svg"} alt={partner.name} fill className="object-cover" />
                   </motion.div>
                   <div>
-                    <h3 className="text-xl md:text-2xl font-heading font-light">{partner.name}</h3>
-                    <p className="text-gray-600 mb-2">{partner.title}</p>
+                    <h3 className="text-xl md:text-2xl font-heading font-light leading-tight">
+                      {partner.name.split(" ").slice(0, -1).join(" ")}<br />
+                      {partner.name.split(" ").slice(-1)}
+                    </h3>
+
+                    <div className="text-gray-600 mb-2">
+                      <p>{partner.title}</p>
+                      <p>{partner.location}</p>
+                    </div>
                     <div className="flex flex-col space-y-1">
                       <motion.a
                         href={`mailto:${partner.email}`}
@@ -615,37 +628,6 @@ export default function Home() {
                       </a>
                     </motion.div>
                   </motion.div>
-
-                  <motion.div
-                    className="flex flex-col space-y-2"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                  >
-                    <h3 className="text-xl font-heading font-light">Eric N. Peterson</h3>
-                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
-                      <Mail className="h-5 w-5 text-blue-200" />
-                      <a
-                        href="mailto:EPeterson@Waverly-Partners.com"
-                        className="hover:underline text-sm md:text-base break-all"
-                      >
-                        EPeterson@Waverly-Partners.com
-                      </a>
-                    </motion.div>
-                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
-                      <Phone className="h-5 w-5 text-blue-200" />
-                      <a href="tel:4408925961" className="hover:underline text-sm md:text-base">
-                        O: 440.892.5961
-                      </a>
-                    </motion.div>
-                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
-                      <Smartphone className="h-5 w-5 text-blue-200" />
-                      <a href="tel:4404630988" className="hover:underline text-sm md:text-base">
-                        C: 440.463.0988
-                      </a>
-                    </motion.div>
-                  </motion.div>
                 </div>
               </motion.div>
 
@@ -656,46 +638,29 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <motion.footer
-        className="w-full py-6 bg-navy text-gray-300"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
+      <footer className="w-full py-6 bg-navy text-gray-300">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <motion.div
-              className="flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
+            <div className="flex items-center gap-2">
               <Image
-                src="/logo_ward_howell_grau.png"
-                alt="Ward Howell International"
-                width={150}
-                height={30}
+                src="/waverly-ward-howell-logo.png"
+                alt="Waverly Partners | Ward Howell International"
+                width={220}
+                height={50}
                 className="object-contain"
               />
-            </motion.div>
+            </div>
             <p className="text-sm">&copy; {new Date().getFullYear()} All rights reserved.</p>
             <div className="flex items-center gap-4">
-              <motion.div whileHover={{ y: -2 }}>
-                <Link href="/privacy" className="text-sm hover:underline">
-                  Privacy Policy
-                </Link>
-              </motion.div>
-              <motion.div whileHover={{ y: -2 }}>
-                <Link href="/terms" className="text-sm hover:underline">
-                  Terms of Service
-                </Link>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+              <div className="text-sm text-gray-400 cursor-not-allowed">
+                Privacy Policy
+              </div>
+              <div className="text-sm text-gray-400 cursor-not-allowed">
+                Terms of Service
+              </div>
+              <div className="hover:text-white transition-colors">
                 <a
-                  href="https://www.linkedin.com/company/waverly-partners"
+                  href="https://www.linkedin.com/company/waverly-partners-llc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -703,11 +668,11 @@ export default function Home() {
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </a>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
-      </motion.footer>
+      </footer>
     </div>
   )
 }
