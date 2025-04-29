@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container h-full px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/placeholder.svg?height=40&width=180"
+            src="/waverly-ward-howell-logo.png"
             alt="Ward Howell International"
             width={180}
             height={40}
@@ -32,4 +32,3 @@ export default function Header() {
     </header>
   )
 }
-
