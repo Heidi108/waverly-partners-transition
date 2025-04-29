@@ -250,33 +250,33 @@ export default function Home() {
                   As of early 2025, we are now:
                   <br />
                   <span
-                  style={{
-                    fontFamily: "Cinzel, serif",
-                    fontSize: "1.75rem",
-                    fontWeight: "700",
-                    letterSpacing: "0.05em",
-                    textTransform: "uppercase"
-                  }}
-                >
-                  Waverly Partners
-                </span>
-                <span
-                  style={{
-                    fontFamily: "Merriweather, serif",
-                    fontSize: "1.25rem",
-                    margin: "0 0.5rem"
-                  }}
-                >
-                  |
-                </span>
-                <span
-                  style={{
-                    fontFamily: "Merriweather, serif",
-                    fontSize: "1.125rem"
-                  }}
-                >
-                  a <strong style={{ color: "#002f6c", fontWeight: 700 }}>Ward Howell</strong> company
-                </span>
+                    style={{
+                      fontFamily: "Cinzel, serif",
+                      fontSize: "1.75rem",
+                      fontWeight: 700,
+                      letterSpacing: "0.05em",
+                      textTransform: "uppercase"
+                    }}
+                  >
+                    <span style={{ fontSize: "2.2rem" }}>W</span>averly <span style={{ fontSize: "2.2rem" }}>P</span>artners
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "Merriweather, serif",
+                      fontSize: "1.25rem",
+                      margin: "0 0.5rem"
+                    }}
+                  >
+                    |
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "Merriweather, serif",
+                      fontSize: "1.125rem"
+                    }}
+                  >
+                    a <strong style={{ color: "#002f6c", fontWeight: 700 }}>Ward Howell</strong> company
+                  </span>
 
 
                 </p>
