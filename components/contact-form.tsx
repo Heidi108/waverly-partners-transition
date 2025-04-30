@@ -74,13 +74,13 @@ export default function ContactForm() {
 
     try {
       const formDataToSubmit = new FormData()
-      formDataToSubmit.append("entry.2005620554", formData.firstName)
-      formDataToSubmit.append("entry.975009488", formData.lastName)
-      formDataToSubmit.append("entry.1045781291", formData.email)
-      formDataToSubmit.append("entry.1166974658", formData.organization)
-      formDataToSubmit.append("entry.839337160", formData.message)
+      formDataToSubmit.append("entry.1021555764", formData.firstName);      
+      formDataToSubmit.append("entry.1839996696", formData.lastName);      
+      formDataToSubmit.append("entry.203359972", formData.email);           
+      formDataToSubmit.append("entry.52758287", formData.organization);  
+      formDataToSubmit.append("entry.684628599", formData.message);        
 
-      await fetch("https://docs.google.com/forms/d/e/1FAIpQLSf2QNv0AehrxdhSBC1Pxh4NE250mzfYo1fh7srBSgax5vhIRA/formResponse", {
+      await fetch("https://docs.google.com/forms/d/e/1FAIpQLSdvGg3vOVS60kx99qEpWtt_hqiCL2MlMwENIPSqt-txhKVzOw/formResponse", {
         method: "POST",
         mode: "no-cors",
         body: formDataToSubmit,
