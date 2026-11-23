@@ -722,7 +722,7 @@ export default function Home() {
                         C: 440.463.0988
                       </a>
                     </motion.div>
-                  </motiaon.div>
+                  </motion.div>
                 </div>
               </motion.div>
 
