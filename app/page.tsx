@@ -151,6 +151,15 @@ export default function Home() {
               logo: "https://waverly-partners.com/Waverly_partners_logo.png",
               foundingDate: "2001",
               sameAs: ["https://www.linkedin.com/company/waverly-partners"],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+1-440-355-6629",
+                  contactType: "Customer Support",
+                  areaServed: "US",
+                  availableLanguage: "English",
+                },
+              ],
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Cleveland",
@@ -501,6 +510,7 @@ export default function Home() {
                   location: "Cleveland, OH",
                   image: "/heidi-profile.jpeg",
                   email: "HMilosovic@Waverly-Partners.com",
+                  office: "440.355.6629",
                   mobile: "216.387.0832",
                   linkedin: "https://www.linkedin.com/in/heidimilosovic/",
                 },
@@ -570,6 +580,14 @@ export default function Home() {
                         <Mail className="h-4 w-4" />
                         {partner.email}
                       </motion.a>
+                      {partner.office && (
+                        <motion.div className="flex items-center justify-center gap-1 text-navy text-sm md:text-base">
+                          <Phone className="h-4 w-4" />
+                          <a href={`tel:${partner.office.replace(/\./g, "")}`} className="hover:underline">
+                            O: {partner.office}
+                          </a>
+                        </motion.div>
+                      )}
                       <motion.div className="flex items-center justify-center gap-1 text-navy text-sm md:text-base">
                         <Smartphone className="h-4 w-4" />
                         <a href={`tel:${partner.mobile.replace(/\./g, "")}`} className="hover:underline">
@@ -669,12 +687,42 @@ export default function Home() {
                       </a>
                     </motion.div>
                     <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
+                      <Phone className="h-5 w-5 text-blue-200" />
+                      <a href="tel:4403556629" className="hover:underline text-sm md:text-base">
+                        O: 440.355.6629
+                      </a>
+                    </motion.div>
+                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
                       <Smartphone className="h-5 w-5 text-blue-200" />
                       <a href="tel:2163870832" className="hover:underline text-sm md:text-base">
                         C: 216.387.0832
                       </a>
                     </motion.div>
                   </motion.div>
+                  <motion.div
+                    className="flex flex-col space-y-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                  >
+                    <h3 className="text-xl font-heading font-light">Eric N. Peterson</h3>
+                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
+                      <Mail className="h-5 w-5 text-blue-200" />
+                      <a
+                        href="mailto:EPeterson@Waverly-Partners.com"
+                        className="hover:underline text-sm md:text-base break-all"
+                      >
+                        EPeterson@Waverly-Partners.com
+                      </a>
+                    </motion.div>
+                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
+                      <Smartphone className="h-5 w-5 text-blue-200" />
+                      <a href="tel:4404630988" className="hover:underline text-sm md:text-base">
+                        C: 440.463.0988
+                      </a>
+                    </motion.div>
+                  </motiaon.div>
                 </div>
               </motion.div>
 
