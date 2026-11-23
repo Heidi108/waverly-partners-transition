@@ -151,22 +151,6 @@ export default function Home() {
               logo: "https://waverly-partners.com/Waverly_partners_logo.png",
               foundingDate: "2001",
               sameAs: ["https://www.linkedin.com/company/waverly-partners"],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+1-440-355-6629",
-                  contactType: "Customer Support",
-                  areaServed: "US",
-                  availableLanguage: "English",
-                },
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+1-440-892-5961",
-                  contactType: "Customer Support",
-                  areaServed: "US",
-                  availableLanguage: "English",
-                },
-              ],
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Cleveland",
@@ -517,7 +501,6 @@ export default function Home() {
                   location: "Cleveland, OH",
                   image: "/heidi-profile.jpeg",
                   email: "HMilosovic@Waverly-Partners.com",
-                  office: "440.355.6629",
                   mobile: "216.387.0832",
                   linkedin: "https://www.linkedin.com/in/heidimilosovic/",
                 },
@@ -587,12 +570,6 @@ export default function Home() {
                         <Mail className="h-4 w-4" />
                         {partner.email}
                       </motion.a>
-                      <motion.div className="flex items-center justify-center gap-1 text-navy text-sm md:text-base">
-                        <Phone className="h-4 w-4" />
-                        <a href={`tel:${partner.office.replace(/\./g, "")}`} className="hover:underline">
-                          O: {partner.office}
-                        </a>
-                      </motion.div>
                       <motion.div className="flex items-center justify-center gap-1 text-navy text-sm md:text-base">
                         <Smartphone className="h-4 w-4" />
                         <a href={`tel:${partner.mobile.replace(/\./g, "")}`} className="hover:underline">
@@ -689,12 +666,6 @@ export default function Home() {
                         className="hover:underline text-sm md:text-base break-all"
                       >
                         HMilosovic@Waverly-Partners.com
-                      </a>
-                    </motion.div>
-                    <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
-                      <Phone className="h-5 w-5 text-blue-200" />
-                      <a href="tel:4403556629" className="hover:underline text-sm md:text-base">
-                        O: 440.355.6629
                       </a>
                     </motion.div>
                     <motion.div className="flex items-center gap-3" whileHover={{ x: 5 }}>
